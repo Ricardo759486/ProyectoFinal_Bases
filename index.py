@@ -1,5 +1,6 @@
 from app import app
 from utils.db import db
+import config
 
 with app.app_context():
     db.create_all()

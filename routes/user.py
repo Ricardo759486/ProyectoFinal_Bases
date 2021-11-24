@@ -58,3 +58,7 @@ def delete_user(id):
     db.session.commit()
     flash("Usuario eliminado correctamente")
     return redirect(url_for('users.index'))
+
+@users.route('/about')
+def about():
+    return render_template('about.html')

@@ -1,51 +1,42 @@
-{% with messages = get_flashed_messages() %}
+{% extends 'layout.html' %}
 
-    {% if messages %}
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-    {% endif %}
+{% block body %}
 
-{% endwith %}
+<div class="row">
 
-
-<form action="/new" method="POST">
-
-    <input type="text" name="usuario" placeholder="usuario">
-    <input type="text" name="contraseña" placeholder="contraseña">
-    <input type="text" name="identificacion" placeholder="identificacion">
-    <input type="text" name="nombres" placeholder="nombres">
-    <input type="text" name="apellidos" placeholder="apellidos">
-    <input type="text" name="telefono" placeholder="telefono">
-    <input type="text" name="correo" placeholder="correo">
-    <input type="text" name="direccion" placeholder="direccion">
-    <input type="text" name="id_rol" placeholder="id_rol">
-    <input type="text" name="estado" placeholder="estado">
-
-    <button>Guardar</button>
-
-</form>
-
-<div>
-    {% for usuario in listaUsuario %}
-
-    <div>
-        <h5>{{usuario.usuario}}</h5>
-        <div>
-            <a href="{{ url_for('users.update_user', id = usuario.id) }}">update</a>
-            <a href="{{ url_for('users.delete_user', id = usuario.id) }}">delete</a>
-        </div>
-        <p>{{usuario.contrasenia}}</p>
-        <p>{{usuario.identificacion}}</p>
-        <p>{{usuario.nombres}}</p>
-        <p>{{usuario.apellidos}}</p>
-        <p>{{usuario.telefono}}</p>
-        <p>{{usuario.correo}}</p>
-        <p>{{usuario.direccion}}</p>
-        <p>{{usuario.id_rol}}</p>
-        <p>{{usuario.estado}}</p>
-
+    <div class="col-md-5">
+        {% include 'partials/_message.html' %}
+        {% include 'partials/_userForm.html' %}
     </div>
 
-    {% endfor %}
+    <div class="col-md-7">
+            {% for usuario in listaUsuario %}
+        
+            <div class="card mb-1 text-white bg-dark">
+
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h5>{{usuario.usuario}}</h5>
+                        <div>
+                            <a href="{{ url_for('users.update_user', id = usuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">update</a>
+                            <a href="{{ url_for('users.delete_user', id = usuario.id) }}" class="btn btn-danger btn-sm rounded-0">delete</a>
+                        </div> 
+                    </div>
+                    <p>{{usuario.contrasenia}}</p>
+                    <p>{{usuario.identificacion}}</p>
+                    <p>{{usuario.nombres}}</p>
+                    <p>{{usuario.apellidos}}</p>
+                    <p>{{usuario.telefono}}</p>
+                    <p>{{usuario.correo}}</p>
+                    <p>{{usuario.direccion}}</p>
+                    <p>{{usuario.id_rol}}</p>
+                    <p>{{usuario.estado}}</p>
+                    </div>
+            </div>
+        
+            {% endfor %}
+    </div>
+
 </div>
+
+{% endblock %}

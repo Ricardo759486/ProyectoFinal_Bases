@@ -1,16 +1,59 @@
-<form action="/update/{{usuario.id}}" method="POST">
+{% extends 'layout.html' %}
 
-    <input type="text" name="usuario" placeholder="usuario" value="{{usuario.usuario}}">
-    <input type="text" name="contraseña" placeholder="contraseña" value="{{usuario.contrasenia}}">
-    <input type="text" name="identificacion" placeholder="identificacion" value="{{usuario.identificacion}}">
-    <input type="text" name="nombres" placeholder="nombres" value="{{usuario.nombres}}">
-    <input type="text" name="apellidos" placeholder="apellidos" value="{{usuario.apellidos}}">
-    <input type="text" name="telefono" placeholder="telefono" value="{{usuario.telefono}}">
-    <input type="text" name="correo" placeholder="correo" value="{{usuario.correo}}">
-    <input type="text" name="direccion" placeholder="direccion" value="{{usuario.direccion}}">
-    <input type="text" name="id_rol" placeholder="id_rol" value="{{usuario.id_rol}}">
-    <input type="text" name="estado" placeholder="estado" value="{{usuario.estado}}">
+{% block body %}
 
-    <button>Guardar</button>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <form action="/update/{{usuario.id}}" method="POST" class="card bg-dark text-white">
 
-</form>
+            <div class="cardy-body p-4">
+        
+                <div class="mb-3">
+                    <label for="Usuario">Escribe tu usuario</label>
+                    <input type="text" name="usuario" placeholder="usuario" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.usuario}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Contraseña">Escribe tu contraseña</label>
+                    <input type="text" name="contraseña" placeholder="contraseña" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.contrasenia}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Identificacion">Escribe tu identificacion</label>
+                    <input type="text" name="identificacion" placeholder="identificacion" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.identificacion}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Nombres">Escribe tu nombres</label>
+                    <input type="text" name="nombres" placeholder="nombres" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.nombres}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Apellidos">Escribe tu apellidos</label>
+                    <input type="text" name="apellidos" placeholder="apellidos" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.apellidos}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Telefono">Escribe tu telefono</label>
+                    <input type="text" name="telefono" placeholder="telefono" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.telefono}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Correo">Escribe tu correo</label>
+                    <input type="text" name="correo" placeholder="correo" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.correo}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Direccion">Escribe tu direccion</label>
+                    <input type="text" name="direccion" placeholder="direccion" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.direccion}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Id_rol">Escribe tu id_rol</label>
+                    <input type="text" name="id_rol" placeholder="id_rol" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.id_rol}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Estado">Escribe tu estado</label>
+                    <input type="text" name="estado" placeholder="estado" class="form-control rounded-0 bg-dark border-0 text-white" value="{{usuario.estado}}">
+                </div>
+            
+                <button class="btn btn-secondary">Editar</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
+
+{% endblock %}
