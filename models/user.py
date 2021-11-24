@@ -1,6 +1,6 @@
 from utils.db import db
 
-class usuario(db.Model):
+class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     usuario = db.Column(db.String(50))
     contrasenia = db.Column(db.String(50))
