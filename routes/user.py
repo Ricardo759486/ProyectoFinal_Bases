@@ -9,6 +9,10 @@ def index():
     listaUsuario = Usuario.query.all()
     return render_template('index.html', listaUsuario = listaUsuario)
 
+@users.route("/single-blog")
+def singleblog():
+    return render_template('single-blog.html')
+
 @users.route('/new', methods=['POST'])
 def add_user():
     user = request.form['usuario']
