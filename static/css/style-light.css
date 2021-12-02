@@ -680,6 +680,15 @@ blockquote span img {
 #resume:target .pt-home,
 #portfolio:target .pt-home,
 #blog:target .pt-home,
+#contact2:target .pt-home,
+#contact3:target .pt-home,
+#contact4:target .pt-home,
+#contact5:target .pt-home,
+#contact6:target .pt-home,
+#contact7:target .pt-home,
+#contact8:target .pt-home,
+#contact9:target .pt-home,
+#contact10:target .pt-home,
 #contact:target .pt-home {
 	-webkit-filter: blur(3px);
 	-webkit-transition: all .5s ease;
@@ -692,6 +701,15 @@ blockquote span img {
 .pt-resume, 
 .pt-portfolio, 
 .pt-blog,
+.pt-contact2,
+.pt-contact3,
+.pt-contact4,
+.pt-contact5,
+.pt-contact6,
+.pt-contact7,
+.pt-contact8,
+.pt-contact9,
+.pt-contact10,
 .pt-contact {
 	background-color: #fff;
 }
@@ -700,6 +718,15 @@ blockquote span img {
 #resume:target .pt-resume,
 #portfolio:target .pt-portfolio,
 #blog:target .pt-blog,
+#contact2:target .pt-contact2,
+#contact3:target .pt-contact3,
+#contact4:target .pt-contact4,
+#contact5:target .pt-contact5,
+#contact6:target .pt-contact6,
+#contact7:target .pt-contact7,
+#contact8:target .pt-contact8,
+#contact9:target .pt-contact9,
+#contact10:target .pt-contact10,
 #contact:target .pt-contact {
 	transition-delay: .3s;
 }
@@ -858,6 +885,15 @@ blockquote span img {
 #resume:target .header-main ul li a,
 #portfolio:target .header-main ul li a,
 #blog:target .header-main ul li a,
+#contact2:target .header-main ul li a,
+#contact3:target .header-main ul li a,
+#contact4:target .header-main ul li a,
+#contact5:target .header-main ul li a,
+#contact6:target .header-main ul li a,
+#contact7:target .header-main ul li a,
+#contact8:target .header-main ul li a,
+#contact9:target .header-main ul li a,
+#contact10:target .header-main ul li a,
 #contact:target .header-main ul li a {
 	-webkit-transform: scale(.8);
 	-ms-transform: scale(.8);
@@ -868,6 +904,15 @@ blockquote span img {
 #resume:target .icon-r,
 #portfolio:target .icon-p,
 #blog:target .icon-b,
+#contact2:target .icon-c,
+#contact3:target .icon-c,
+#contact4:target .icon-c,
+#contact5:target .icon-c,
+#contact6:target .icon-c,
+#contact7:target .icon-c,
+#contact8:target .icon-c,
+#contact9:target .icon-c,
+#contact10:target .icon-c,
 #contact:target .icon-c {
 	color: #fff;
 	-webkit-transform: scale(1.3) !important;
@@ -1046,6 +1091,15 @@ blockquote span img {
 
 /* User Info Block */
 .pt-about .info .photo img {
+	-webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+.pt-resume .info .photo img {
+	-webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.pt-portfolio .info .photo img {
 	-webkit-border-radius: 100%;
     border-radius: 100%;
 }
@@ -1854,10 +1908,37 @@ blockquote span img {
 /* ---------------------------------
 		9. Contact Section
 --------------------------------- */
+.contact2-form,
+.contact3-form,
+.contact4-form,
+.contact5-form,
+.contact6-form,
+.contact7-form,
+.contact8-form,
+.contact9-form,
+.contact10-form,
 .contact-form {
 	position: relative;
 }
 
+.contact2-form input,
+.contact2-form textarea,
+.contact3-form input,
+.contact3-form textarea,
+.contact4-form input,
+.contact4-form textarea,
+.contact5-form input,
+.contact5-form textarea,
+.contact6-form input,
+.contact6-form textarea,
+.contact7-form input,
+.contact7-form textarea,
+.contact8-form input,
+.contact8-form textarea,
+.contact9-form input,
+.contact9-form textarea,
+.contact10-form input,
+.contact10-form textarea,
 .contact-form input,
 .contact-form textarea {
 	font-size: 15px;
@@ -1872,6 +1953,24 @@ blockquote span img {
     box-shadow: none;
 }
 
+.contact2-form input:focus,
+.contact2-form textarea:focus,
+.contact3-form input:focus,
+.contact3-form textarea:focus,
+.contact4-form input:focus,
+.contact4-form textarea:focus,
+.contact5-form input:focus,
+.contact5-form textarea:focus,
+.contact6-form input:focus,
+.contact6-form textarea:focus,
+.contact7-form input:focus,
+.contact7-form textarea:focus,
+.contact8-form input:focus,
+.contact8-form textarea:focus,
+.contact9-form input:focus,
+.contact9-form textarea:focus,
+.contact10-form input:focus,
+.contact10-form textarea:focus,
 .contact-form input:focus,
 .contact-form textarea:focus {
 	border-bottom: 1px solid #fff;
@@ -1884,33 +1983,87 @@ blockquote span img {
 	transition: all 0.3s ease-in-out;
 }
 
+.contact2-form textarea,
+.contact3-form textarea,
+.contact4-form textarea,
+.contact5-form textarea,
+.contact6-form textarea,
+.contact7-form textarea,
+.contact8-form textarea,
+.contact9-form textarea,
+.contact10-form textarea,
 .contact-form textarea {
 	height: 100px;
 	margin: 50px 0;
 }
 
 /* Contact info */
+.pt-contact2 .contact2-info,
+.pt-contact3 .contact3-info,
+.pt-contact4 .contact4-info,
+.pt-contact5 .contact5-info,
+.pt-contact6 .contact6-info,
+.pt-contact7 .contact7-info,
+.pt-contact8 .contact8-info,
+.pt-contact9 .contact9-info,
+.pt-contact10 .contact10-info,
 .pt-contact .contact-info {
 	text-align: center;
 	margin-top: 100px;
 }
 
+.pt-contact2 .contact2-info .info i,
+.pt-contact3 .contact3-info .info i,
+.pt-contact4 .contact4-info .info i,
+.pt-contact5 .contact5-info .info i,
+.pt-contact6 .contact6-info .info i,
+.pt-contact7 .contact7-info .info i,
+.pt-contact8 .contact8-info .info i,
+.pt-contact9 .contact9-info .info i,
+.pt-contact10 .contact10-info .info i,
 .pt-contact .contact-info .info i {
     font-size: 30px;
     color: #0e0f10;
 }
 
+.pt-contact2 .contact2-info .info p,
+.pt-contact3 .contact3-info .info p,
+.pt-contact4 .contact4-info .info p,
+.pt-contact5 .contact5-info .info p,
+.pt-contact6 .contact6-info .info p,
+.pt-contact7 .contact7-info .info p,
+.pt-contact8 .contact8-info .info p,
+.pt-contact9 .contact9-info .info p,
+.pt-contact10 .contact10-info .info p,
 .pt-contact .contact-info .info p {
     font-size: 15px;
     line-height: 25px;
     padding: 30px 0 0px;
 }
 
+.pt-contact2 .contact2-info .info span,
+.pt-contact3 .contact3-info .info span,
+.pt-contact4 .contact4-info .info span,
+.pt-contact5 .contact5-info .info span,
+.pt-contact6 .contact6-info .info span,
+.pt-contact7 .contact7-info .info span,
+.pt-contact8 .contact8-info .info span,
+.pt-contact9 .contact9-info .info span,
+.pt-contact10 .contact10-info .info span,
 .pt-contact .contact-info .info span {
     color: #495057;
 }
 
 /* Google Map */
+.pt-contact2 #map,
+.pt-contact3 #map,
+.pt-contact4 #map,
+.pt-contact5 #map,
+.pt-contact6 #map,
+.pt-contact7 #map,
+.pt-contact8 #map,
+.pt-contact9 #map,
+.pt-contact10 #map,
 .pt-contact #map {
     width: 100%;
     height: 300px;
@@ -1919,10 +2072,28 @@ blockquote span img {
 }
 
 /* Contact validation */
+.contact2-valid .error-messages,
+.contact3-valid .error-messages,
+.contact4-valid .error-messages,
+.contact5-valid .error-messages,
+.contact6-valid .error-messages,
+.contact7-valid .error-messages,
+.contact8-valid .error-messages,
+.contact9-valid .error-messages,
+.contact10-valid .error-messages,
 .contact-valid .error-messages {
 	margin-top: 15px;
 }
 
+.contact2-valid label.error,
+.contact3-valid label.error,
+.contact4-valid label.error,
+.contact5-valid label.error,
+.contact6-valid label.error,
+.contact7-valid label.error,
+.contact8-valid label.error,
+.contact9-valid label.error,
+.contact10-valid label.error,
 .contact-valid label.error {
 	display: block;
 	color: #ff0000;
@@ -1932,11 +2103,29 @@ blockquote span img {
 	text-align: left;
 }
 
+.contact2-valid #loader2,
+.contact3-valid #loader3,
+.contact4-valid #loader4,
+.contact5-valid #loader5,
+.contact6-valid #loader6,
+.contact7-valid #loader7,
+.contact8-valid #loader8,
+.contact9-valid #loader9,
+.contact10-valid #loader10,
 .contact-valid #loader {
 	display: none;
 	margin-top: 30px;
 }
 
+.contact2-valid #loader2 i,
+.contact3-valid #loader3 i,
+.contact4-valid #loader4 i,
+.contact5-valid #loader5 i,
+.contact6-valid #loader6 i,
+.contact7-valid #loader7 i,
+.contact8-valid #loader8 i,
+.contact9-valid #loader9 i,
+.contact10-valid #loader10 i,
 .contact-valid #loader i {
 	display: inline-block;
 	font-size: 23px;
@@ -1945,6 +2134,24 @@ blockquote span img {
 	animation: rotating linear 2s infinite;
 }
 
+.contact2-valid #success2,
+.contact2-valid #error2,
+.contact3-valid #success3,
+.contact3-valid #error3,
+.contact4-valid #success4,
+.contact4-valid #error4,
+.contact5-valid #success5,
+.contact5-valid #error5,
+.contact6-valid #success6,
+.contact6-valid #error6,
+.contact7-valid #success7,
+.contact7-valid #error7,
+.contact8-valid #success8,
+.contact8-valid #error8,
+.contact9-valid #success9,
+.contact9-valid #error9,
+.contact10-valid #success10,
+.contact10-valid #error10,
 .contact-valid #success,
 .contact-valid #error {
 	display: none;
@@ -1956,6 +2163,24 @@ blockquote span img {
 	text-align: center;
 }
 
+.contact2-valid #success2 i,
+.contact2-valid #error2 i,
+.contact3-valid #success3 i,
+.contact3-valid #error3 i,
+.contact4-valid #success4 i,
+.contact4-valid #error4 i,
+.contact5-valid #success5 i,
+.contact5-valid #error5 i,
+.contact6-valid #success6 i,
+.contact6-valid #error6 i,
+.contact7-valid #success7 i,
+.contact7-valid #error7 i,
+.contact8-valid #success8 i,
+.contact8-valid #error8 i,
+.contact9-valid #success9 i,
+.contact9-valid #error9 i,
+.contact10-valid #success10 i,
+.contact10-valid #error10 i,
 .contact-valid #success i,
 .contact-valid #error i {
 	padding-top: 5px;
@@ -1963,10 +2188,28 @@ blockquote span img {
 	margin-left: 5px;
 }
 
+.contact2-valid #success2 i,
+.contact3-valid #success3 i,
+.contact4-valid #success4 i,
+.contact5-valid #success5 i,
+.contact6-valid #success6 i,
+.contact7-valid #success7 i,
+.contact8-valid #success8 i,
+.contact9-valid #success9 i,
+.contact10-valid #success10 i,
 .contact-valid #success i {
 	color: #25ca7f;
 }
 
+.contact2-valid #error2 i,
+.contact3-valid #error3 i,
+.contact4-valid #error4 i,
+.contact5-valid #error5 i,
+.contact6-valid #error6 i,
+.contact7-valid #error7 i,
+.contact8-valid #error8 i,
+.contact9-valid #error9 i,
+.contact10-valid #error10 i,
 .contact-valid #error i {
 	color: #ca1d1d;
 }
@@ -2353,6 +2596,15 @@ blockquote span img {
 		width: 50%;
 		float: left;
 	}
+	.pt-contact2 .contact2-info .info,
+	.pt-contact3 .contact3-info .info,
+	.pt-contact4 .contact4-info .info,
+	.pt-contact5 .contact5-info .info,
+	.pt-contact6 .contact6-info .info,
+	.pt-contact7 .contact7-info .info,
+	.pt-contact8 .contact8-info .info,
+	.pt-contact9 .contact9-info .info,
+	.pt-contact10 .contact10-info .info,
 	.pt-contact .contact-info .info {
     	margin-bottom: 40px;
 	}
@@ -2369,6 +2621,15 @@ blockquote span img {
 	#resume:target .pt-resume,
 	#portfolio:target .pt-portfolio,
 	#blog:target .pt-blog,
+	#contact2:target .pt-contact2,
+	#contact3:target .pt-contact3,
+	#contact4:target .pt-contact4,
+	#contact5:target .pt-contact5,
+	#contact6:target .pt-contact6,
+	#contact7:target .pt-contact7,
+	#contact8:target .pt-contact8,
+	#contact9:target .pt-contact9,
+	#contact10:target .pt-contact10,
 	#contact:target .pt-contact {
 		-webkit-transform: translateX(0);
     	-ms-transform: translateX(0);
@@ -2445,6 +2706,18 @@ blockquote span img {
     	width: 50%;
     	margin: 0 auto 30px;
 	}
+	.pt-resume .info .photo img {
+		display: block;
+    	width: 50%;
+    	margin: 0 auto 30px;
+	}
+
+	.pt-portfolio .info .photo img {
+		display: block;
+    	width: 50%;
+    	margin: 0 auto 30px;
+	}
+	
 	.pt-about .testimonial-item:before {
 		top: 15px;
 		right: 15px;

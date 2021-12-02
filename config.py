@@ -11,3 +11,4 @@ databasedb = os.environ['MYSQL_DATABASE']
 
 
 DATABASE_CONNECTION_URI = f'mysql://{userdb}:{passworddb}@{hostdb}/{databasedb}'
+DATABASE_CONNECTION_QUERY =f"host={hostdb},user={userdb}, passwd={passworddb},db={databasedb}"

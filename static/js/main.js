@@ -239,6 +239,122 @@ $(document).ready(function() {
         });
     }
 	
+    /* -----------------------------------
+	    14. Validate Services Form
+	----------------------------------- */
+	if ($("#contact2-form").length) {
+        $("#contact2-form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+
+                email: "required",
+				
+            },
+
+            messages: {
+                name: "Please enter your name",
+                email: "Please enter your email address"
+            },
+
+            submitHandler: function (form) {
+                        
+                        $( "#loader2").hide();
+                        $( "#success2").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#success2").slideUp( "slow" );
+                        }, 3000);
+                        form.reset();
+                    
+                    
+                        /*$( "#loader2").hide();
+                        $( "#error2").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#error2").slideUp( "slow" );
+                        }, 3000);*/
+                    
+                
+            }
+
+        });
+    }
+
+    /* -----------------------------------
+	    14. Validate Mascota Form
+	----------------------------------- */
+	if ($("#contact3-form").length) {
+        $("#contact3-form").validate({
+            rules: {
+                nombre: {
+                    required: true,
+                    minlength: 2
+                },
+                especie: "required",
+                raza: "required",
+                color: "required",
+                peso: "required",
+                email: "required",
+                nacimiento: "required",
+            },
+
+            messages: {
+                name: "Please enter your name",
+                email: "Please enter your email address"
+            },
+
+            submitHandler: function (form) {
+
+                
+                $( "#loader3").hide();
+                $( "#success3").slideDown( "slow" );
+                setTimeout(function() {
+                $( "#success3").slideUp( "slow" );
+                }, 3000);
+                form.reset();
+
+
+                
+            }
+
+        });
+    }
+
+    /* -----------------------------------
+	    14. Validate Factura Form
+	----------------------------------- */
+	if ($("#contact4-form").length) {
+        $("#contact4-form").validate({
+            rules: {
+                servicio: "required",
+                formapago: "required",
+                fecha: "required"
+            },
+
+            messages: {
+                name: "Please enter your name",
+                email: "Please enter your email address"
+            },
+
+            submitHandler: function (form) {
+
+                
+                $( "#loader4").hide();
+                $( "#success4").slideDown( "slow" );
+                setTimeout(function() {
+                $( "#success4").slideUp( "slow" );
+                }, 3000);
+                form.reset();
+
+
+                
+            }
+
+        });
+    }
+
+
 	/* -----------------------------------
 	      	5. Glitch Effect
 	----------------------------------- */

@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-5">
+    {% include 'partials/_message.html' %}
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <form action="/addDetalle/{{id}}" method="POST" class="card bg-dark text-white">
+
+            <div class="cardy-body p-4">
+        
+                <div class="mb-3">
+                    <label for="Nombre">Servicio</label>
+                    <select name="servicio" id="servicio" class="form-control">
+                        <option value="">Seleccione...</option>
+                        {% for i in listaServicios %}
+                        <option value="{{i.id}}">{{i.nombre}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Contraseña">Cantidad</label>
+                    <input type="number" name="cantidad" placeholder="Cantidad" class="form-control rounded-0 bg-dark border-0 text-white">
+                </div>
+
+                <style>
+                    #divbotonServicio{margin-top: 30px;}
+                    #boton2{font-size: 20px; border-radius: 300px; background-color: rgb(92, 83, 83);}
+                </style>
+                
+                <button class="btn btn-primary">Agregar otro servicio</button>    
+            </div>
+        </form>
+        <div id="divbotonServicio">
+            <a id="boton2" href="{{ url_for('proy.irVeterinario', id = id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0"> Crear Factura </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

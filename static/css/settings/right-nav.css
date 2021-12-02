@@ -18,6 +18,15 @@
 .pt-resume, 
 .pt-portfolio, 
 .pt-blog,
+.pt-contact2,
+.pt-contact3,
+.pt-contact4,
+.pt-contact5,
+.pt-contact6,
+.pt-contact7,
+.pt-contact8,
+.pt-contact9,
+.pt-contact10,
 .pt-contact {
 	-webkit-transform: translateX(-200%) !important;
 	-ms-transform: translateX(-200%) !important;
@@ -28,6 +37,15 @@
 #resume:target .pt-resume,
 #portfolio:target .pt-portfolio,
 #blog:target .pt-blog,
+#contact2:target .pt-contact2,
+#contact3:target .pt-contact3,
+#contact4:target .pt-contact4,
+#contact5:target .pt-contact5,
+#contact6:target .pt-contact6,
+#contact7:target .pt-contact7,
+#contact8:target .pt-contact8,
+#contact9:target .pt-contact9,
+#contact10:target .pt-contact10,
 #contact:target .pt-contact {
 	-webkit-transform: translateX(0%) !important;
 	-ms-transform: translateX(0%) !important;

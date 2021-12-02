@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-5">
+    {% include 'partials/_message.html' %}
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <form action="/updatepet/{{mascota.id}}/{{con}}/{{idActual}}" method="POST" class="card bg-dark text-white">
+
+            <div class="cardy-body p-4">
+        
+                <div class="mb-3">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre" class="form-control rounded-0 bg-dark border-0 text-white" value="{{mascota.nombre}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Especie">Especie</label>
+                    <select name="especie" id="especie" class="form-control">
+                        <option value="{{mascota.id_especie}}">{{infomascota[0][0]}}</option>
+                        {% for i in listaEspecie %}
+                        <option value="{{i.id}}">{{i.nombre}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Raza">Raza</label>
+                    <select name="raza" id="raza" class="form-control">
+                        <option value="{{mascota.id_raza}}">{{infomascota[0][1]}}</option>
+                        {% for i in listaRaza %}
+                        <option value="{{i.id}}">{{i.nombre}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Colo">Color</label>
+                    <select name="color" id="color" class="form-control">
+                        <option value="{{mascota.id_color}}">{{infomascota[0][2]}}</option>
+                        {% for i in listaColor %}
+                        <option value="{{i.id}}">{{i.nombre}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Nacimiento">Año de Nacimiento</label>
+                    <input type="text" name="nacimiento" placeholder="Año de Nacimiento" class="form-control rounded-0 bg-dark border-0 text-white" value="{{mascota.anio_nacimiento}}">
+                </div>
+                <div class="mb-3">
+                    <label for="Peso">Peso</label>
+                    <input type="text" name="peso" placeholder="Peso" class="form-control rounded-0 bg-dark border-0 text-white" value="{{mascota.peso}}">
+                </div>
+            
+                <button class="btn btn-secondary">Editar</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
+
+{% endblock %}

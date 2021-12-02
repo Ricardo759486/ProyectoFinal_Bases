@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-5">
+    {% include 'partials/_message.html' %}
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <form action="/addfactura/{{id}}" method="POST" class="card bg-dark text-white">
+
+            <div class="cardy-body p-4">
+        
+                <div class="mb-3">
+                    <label for="Nombre">Forma de Pago</label>
+                    <select name="formapago" id="formapago" class="form-control">
+                        <option value="">Seleccione...</option>
+                        {% for i in listaPagos %}
+                        <option value="{{i.id}}">{{i.tipodepago}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="text-center">
+                    <button class="btn btn-secondary">Seleccionar Servicio</button>
+                </div>  
+            </div>
+        
+        </form>
+    </div>
+</div>
+
+{% endblock %}

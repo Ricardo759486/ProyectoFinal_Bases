@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+		
+		<!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- Title -->
+		<title>Proyecto Final</title>
+
+		<!-- CSS Plugins -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/plugins/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/plugins/font-awesome.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins/magnific-popup.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins/simplebar.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins/owl.theme.default.min.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/plugins/jquery.animatedheadline.css')}}">
+		
+		<!-- CSS Base -->
+        <link rel="stylesheet" class="back-color" href="{{url_for('static', filename='css/style-dark.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/style-demo.css')}}">
+		
+		<!-- Settings Style -->
+		<link rel="stylesheet" class="posit-nav" href="{{url_for('static', filename='css/settings/left-nav.css')}}" />
+		<link rel="stylesheet" class="theme-color" href="{{url_for('static', filename='css/settings/green-color.css')}}" />
+		<link rel="stylesheet" href="{{url_for('static', filename='css/tabla.css')}}">
+		<style>
+			#divboton{margin: 35px; width: 0px; height: 0px; left: -25px;}
+		</style>
+
+    </head>
+    <body>
+		
+		<!--Theme Options Start-->
+        <div class="style-options">
+            <div class="toggle-btn">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+            <div class="style-menu">
+                <div class="style-nav">
+                    <h4 class="mt-15 mb-10">Menu de opciones</h4>
+                    <ul>
+						<li><a href="{{url_for('static', filename='css/settings/top-nav.css')}}"><i class="fas fa-caret-up"></i> Arriba</a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/left-nav.css')}}"><i class="fas fa-caret-left"></i> Izquierda</a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/right-nav.css')}}"><i class="fas fa-caret-right"></i> Derecha</a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/bottom-nav.css')}}"><i class="fas fa-caret-down"></i> Abajo</a></li>
+                    </ul>
+                </div>
+				<div class="style-back">
+                    <h4 class="mt-85 mb-10">Estilo de imagen</h4>
+                    <ul>
+                        <li><a href="{{url_for('static', filename='css/style-dark.css')}}"><i class="fas fa-moon"></i> Oscuro</a></li>
+                        <li><a href="{{url_for('static', filename='css/style-light.css')}}"><i class="far fa-lightbulb"></i> Claro</a></li>
+                    </ul>
+                </div>
+				<div class="style-color">
+                    <h4 class="mt-55 mb-10">Color</h4>
+                    <ul>
+						
+                        <li><a href="{{url_for('static', filename='css/settings/green-color.css')}}" style="background-color: #25ca7f;"></a></li>
+						<li><a href="{{url_for('static', filename='css/settings/blue-color.css')}}" style="background-color: #00a3e1;"></a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/red-color.css')}}" style="background-color: #d94c48;"></a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/purple-color.css')}}" style="background-color: #bb68c8;"></a></li>
+						<li><a href="{{url_for('static', filename='css/settings/sea-color.css')}}" style="background-color: #0dcdbd;"></a></li>
+                        <li><a href="{{url_for('static', filename='css/settings/yellow-color.css')}}" style="background-color: #eae328;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+		<!-- Preloader -->
+		<div id="preloader">
+  			<div class="loading-area">
+    			<div class="circle"></div>
+  			</div>
+  			<div class="left-side"></div>
+  			<div class="right-side"></div>
+		</div>
+		
+		<!-- Main Site -->
+		<div id="home">
+  		<div id="about">
+    	<div id="resume">
+     	<div id="portfolio">
+        <div id="blog">
+		<div id="contact">
+		<div id="contact2">
+		<div id="contact3">
+		<div id="contact4">
+		<div id="contact5">
+		<div id="contact6">
+		<div id="contact7">
+		<div id="contact8">
+		<div id="contact9">
+		<div id="contact10">	
+			
+			<div class="header-mobile">
+                <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                <h2>Baha</h2>
+            </div>
+			
+			<!-- Left Block -->
+			<nav class="header-main" data-simplebar>
+		
+				<!-- Logo -->
+				<div class="logo">
+            		<img src="{{url_for('static', filename='img/logo.png')}}" alt="">
+            	</div>
+				
+          		<ul>
+					<li data-tooltip="Inicio" data-position="top">
+            			<a href="#home" class="icon-h fas fa-house-damage"></a>
+					</li>
+					<li data-tooltip="mi usuario" data-position="top">
+            			<a href="#about" class="icon-a fas fa-user-tie"></a>
+					</li>
+					<li data-tooltip="mascotas" data-position="top">
+            			<a href="#resume" class="fas fa-paw"></a>
+					</li>
+					<li data-tooltip="Usuarios" data-position="top">
+            			<a href="#portfolio" class="fas fa-users-cog"></a>
+					</li>
+					<li data-tooltip="facturas" data-position="top">
+            			<a href="#blog" class="icon-b fas fa-receipt"></a>
+					</li>
+					<li data-tooltip="contactanos" data-position="bottom">
+						<a href="#contact" class="icon-c fas fa-envelope"></a>
+					</li>
+					
+          		</ul>
+				
+				<!-- Sound wave -->
+    			<a class="music-bg">
+      				<div class="lines">
+        				<span></span>
+        				<span></span>
+        				<span></span>
+        				<span></span>
+						<span></span>
+						<span></span>
+      				</div>
+					<p> Sonido </p>
+    			</a>
+			 </nav>
+			
+			<!-- Home Section -->
+          	<div class="pt-home" style="background-image: url('static/img/home.jpg')">
+             	<section>
+					
+					<!-- Banner -->
+					<div class="banner">
+						{% with messages = get_flashed_messages() %}
+
+							{% if messages %}
+								{% for message in messages %}
+									<div class="alert alert-warning alert-dismissible fade show" role="alert">
+										{{message}}
+										<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+									</div>
+								{% endfor %}
+							{% endif %}
+
+						{% endwith %}
+  						<h1>Clínica Veterinaria</h1>
+						<p class="cd-headline rotate-1">
+							<span>Trae tu</span>
+							<span class="cd-words-wrapper">
+								<b class="is-visible">perro</b>
+								<b>gato</b>
+								<b>hamster</b>
+								<b>o cualquier mascota</b>
+							</span>
+						</p>
+					</div>
+					
+					<!-- Language -->
+					<!--<div class="lang">
+                		<ul>
+                   			<li><a href="#" class="active">eng</a></li>
+                    		<li><a href="#">rus</a></li>
+                		</ul>
+            		</div>-->
+		
+					<!-- Social -->
+					<div class="social">
+            			<ul>
+                			<li><a href="https://www.facebook.com/JuanFelipeRojasRodrigue"><i class="fab fa-facebook-f"></i></a></li>
+                			<li><a href="https://twitter.com/Pipe_Pai"><i class="fab fa-twitter"></i></a></li>
+                			<li><a href="https://www.instagram.com/yesveryguell/"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCQW0Q7_AKPx7hHUFygDWIyQ"><i class="fab fa-youtube"></i></a></li>
+            			</ul>
+        			</div>
+			  	</section>  
+          	</div>
+			
+			<!-- User Section -->
+			<div class="page pt-about" data-simplebar>
+				<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Perfil</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+									<div class="col-lg-9 col-sm-8">
+										<h4>{{listaUsuario.nombres}} {{listaUsuario.apellidos}}</h4>
+										<div class="loc">
+											<i class="fas fa-map-marked-alt"></i> <p>{{listaUsuario.direccion}}</p> 
+										</div>								
+											<p><b>N° Identificacion:</b> {{listaUsuario.identificacion}}</p>
+											<p><b>Usuario:</b> {{listaUsuario.usuario}}</p>
+											<p><b>Telefono:</b> {{listaUsuario.telefono}}</p>
+											<p><b>Correo:</b> {{listaUsuario.correo}}</p>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-award"></i>
+                                     		<div class="desc-icon">
+												<h6></h6>
+                                            	<p></p>
+                                       		</div>
+                                		</div>
+                                	</div>
+									
+									<!--<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st">Download CV</a>
+									</div>-->
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="">
+                                     		<i class=""></i>
+                                     		<div class="">
+												<h6></h6>
+                                            	<p></p>
+                                      		</div>
+                                		</div>
+                                	</div>
+									
+									<!--<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st">Editar Perfil</a>
+									</div>-->
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-user-astronaut"></i>
+                                     		<div class="desc-icon">
+												<h6>Freelance</h6>
+                                           		<p>Available</p>
+                                        	</div>
+                                		</div>
+                                	</div>-->
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="{{ url_for('proy.update_user', id = listaUsuario.id, con = 3, idActual = listaUsuario.id) }}" class="btn-st">Editar Perfil</a>
+									</div>
+
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+                                		<a href="{{ url_for('proy.index')}}" class="btn-st">Cerrar Sesión</a>
+                                	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+         	</div>-->
+			 
+			 <!-- Pets Section -->
+			<div class="page pt-resume" data-simplebar>
+				<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Mascotas</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable2" class="paginated">
+											<tr class="header">
+												<th style="width:40%;">Nombre</th>
+												<th style="width:40%;">Especie</th>
+												<th style="width:40%;">Raza</th>
+												<th style="width:40%;">Color</th>
+												<th style="width:40%;">Año de Nacimiento</th>
+												<th style="width:40%;">Peso</th>
+												<th style="width:40%;">idDueño</th>
+												<th style="width:40%;">Dueño</th>
+												<th style="width:40%;">Editar</th>
+												<th style="width:40%;">Eliminar</th>
+											</tr>
+											{% for i in listaMascotas %}
+											<tr>
+												<td>{{i[1]}}</td>
+												<td>{{i[2]}}</td>
+												<td>{{i[3]}}</td>
+												<td>{{i[4]}}</td>
+												<td>{{i[5]}}</td>
+												<td>{{i[6]}}</td>
+												<td>{{i[7]}}</td>
+												<td>{{i[8]}}</td>
+												<td><a href="{{ url_for('proy.update_pet', id = i[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">editar</a></td>
+												<td><a href="{{ url_for('proy.delete_pet', id = i[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="">
+                                     		<i class=""></i>
+                                     		<div class="desc-icon">
+												<h6></h6>
+                                            	<p></p>
+                                       		</div>
+                                		</div>
+                                	</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="">
+                                     		<i class=""></i>
+                                     		<div class="">
+												<h6></h6>
+                                            	<p></p>
+                                      		</div>
+                                		</div>
+                                	</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-user-astronaut"></i>
+                                     		<div class="desc-icon">
+												<h6>Freelance</h6>
+                                           		<p>Available</p>
+                                        	</div>
+                                		</div>
+                                	</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+			</div>
+
+			 	<!-- Usuarios Section -->
+			<div class="page pt-portfolio" data-simplebar>
+				<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Roles</h2>
+						<span></span>
+					</div>			
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+								
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre Rol</th>
+											</tr>
+											{% for i in listaroles %}
+											<tr>
+												<td>{{i[0]}}</td>
+												<td>{{i[1]}}</td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Clientes</h2>
+						<span></span>
+					</div>			
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+								
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable3" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre</th>
+												<th style="width:5%;">Apellido</th>
+												<th style="width:5%;">Usuario</th>
+												<th style="width:5%;">Identificacion</th>
+												<th style="width:5%;">Telefono</th>
+												<th style="width:5%;">Correo</th>
+												<th style="width:5%;">Direccion</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+											</tr>
+											{% for usuario in usuarios %}
+											<tr>
+												<td>{{usuario[0]}}</td>
+												<td>{{usuario[4]}}</td>
+												<td>{{usuario[5]}}</td>
+												<td>{{usuario[1]}}</td>
+												<td>{{usuario[3]}}</td>
+												<td>{{usuario[6]}}</td>
+												<td>{{usuario[7]}}</td>
+												<td>{{usuario[8]}}</td>
+												<td><a href="{{ url_for('proy.update_user', id = usuario[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_user', id = usuario[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact4" class="btn-st">Agregar Cliente</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Trabajadores</h2>
+						<span></span>
+					</div>
+
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable3" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre</th>
+												<th style="width:5%;">Apellido</th>
+												<th style="width:5%;">Usuario</th>
+												<th style="width:5%;">Identificacion</th>
+												<th style="width:5%;">Telefono</th>
+												<th style="width:5%;">Correo</th>
+												<th style="width:5%;">Direccion</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+											</tr>
+											{% for usuario in usuarios2 %}
+											<tr>
+												<td>{{usuario[0]}}</td>
+												<td>{{usuario[4]}}</td>
+												<td>{{usuario[5]}}</td>
+												<td>{{usuario[1]}}</td>
+												<td>{{usuario[3]}}</td>
+												<td>{{usuario[6]}}</td>
+												<td>{{usuario[7]}}</td>
+												<td>{{usuario[8]}}</td>
+												<td><a href="{{ url_for('proy.update_user', id = usuario[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_user', id = usuario[0], con = 3, idActual = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact8" class="btn-st">Agregar Mascota</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>		
+								
+				</section>
+			</div>
+
+			<!-- Factura Section -->
+			<div class="page pt-blog" data-simplebar>
+				<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Facturas</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:20%;">N° de Factura</th>
+												<th style="width:20%;">Cantidad de servicios</th>
+												<th style="width:20%;">subtotal</th>
+												<th style="width:20%;">iva</th>
+												<th style="width:20%;">Total</th>
+												<th style="width:20%;">Usuario</th>
+												<th style="width:20%;">fecha</th>
+											</tr>
+											{% for i in listaFactura %}
+											<tr>
+												<td>{{i[0]}}</td>
+												<td>{{i[1]}}</td>
+												<td>{{i[2]}}</td>
+												<td>{{i[3]}}</td>
+												<td>{{i[4]}}</td>
+												<td>{{i[5]}}</td>
+												<td>{{i[6]}}</td>					
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="">
+                                     		<i class=""></i>
+                                     		<div class="desc-icon">
+												<h6></h6>
+                                            	<p></p>
+                                       		</div>
+                                		</div>
+                                	</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="">
+                                     		<i class=""></i>
+                                     		<div class="">
+												<h6></h6>
+                                            	<p></p>
+                                      		</div>
+                                		</div>
+                                	</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-user-astronaut"></i>
+                                     		<div class="desc-icon">
+												<h6>Freelance</h6>
+                                           		<p>Available</p>
+                                        	</div>
+                                		</div>
+                                	</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+			</div>
+			 
+			<!-- SELECCIONES VARIAS Section -->
+         	<div class="page pt-contact" data-simplebar>
+            	<section class="container">
+								
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Formas de Pago</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Tipo de pago</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+
+											</tr>
+											{% for pago in listaPagos %}
+											<tr>
+												<td>{{pago[0]}}</td>
+												<td>{{pago[1]}}</td>
+												<td><a href="{{ url_for('proy.update_FormaColor', idUsuario = listaUsuario.id ,idFP = pago[0]) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_Fomapago', idFP = pago[0], idUsuario = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>					
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact6" class="btn-st">Agregar Forma de Pago</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Servicios</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre Servicio</th>
+												<th style="width:5%;">Valor</th>
+												<th style="width:5%;">Descripcion</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+
+											</tr>
+											{% for servicio in listaServicios %}
+											<tr>
+												<td>{{servicio[0]}}</td>
+												<td>{{servicio[1]}}</td>
+												<td>{{servicio[2]}}</td>
+												<td>{{servicio[3]}}</td>
+												<td><a href="{{ url_for('proy.update_Servicio', idUsuario = listaUsuario.id ,idS = servicio[0]) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_Servicio', idS = servicio[0], idUsuario = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact7" class="btn-st">Agregar Servicio</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-page mt-70 mob-mt">
+						<h2>Especie</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre Especie</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+
+											</tr>
+											{% for especie in listaEspecies %}
+											<tr>
+												<td>{{especie[0]}}</td>
+												<td>{{especie[1]}}</td>
+												<td><a href="{{ url_for('proy.update_Especie', idUsuario = listaUsuario.id ,idE = especie[0]) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_Especie', idE = especie[0], idUsuario = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact2" class="btn-st">Agregar Especie</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-page mt-70 mob-mt">
+						<h2>Raza</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre Razas</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+
+											</tr>
+											{% for i in listarazas %}
+											<tr>
+												<td>{{i[0]}}</td>
+												<td>{{i[1]}}</td>
+												<td><a href="{{ url_for('proy.update_Raza', idUsuario = listaUsuario.id ,idR = i[0]) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_Raza', idR = i[0], idUsuario = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact3" class="btn-st">Agregar Raza</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-page mt-70 mob-mt">
+						<h2>Color</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+							<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="{{url_for('static', filename='img/usuario2.jpg')}}">		
+										</div>	
+									</div>
+
+									<div class="col-lg-9 col-sm-8">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+										<table id="myTable" class="paginated">
+											<tr class="header">
+												<th style="width:5%;">Id</th>
+												<th style="width:5%;">Nombre Color</th>
+												<th style="width:5%;">Editar</th>
+												<th style="width:5%;">Eliminar</th>
+
+											</tr>
+											{% for color in listaColor %}
+											<tr>
+												<td>{{color[0]}}</td>
+												<td>{{color[1]}}</td>
+												<td><a href="{{ url_for('proy.update_Color', idUsuario = listaUsuario.id ,idC = color[0]) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Editar</a></td>
+												<td><a href="{{ url_for('proy.delete_Color', idC = color[0], idUsuario = listaUsuario.id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0">Eliminar</a></td>				
+											</tr>
+											{% endfor %}
+										</table>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="desc-icon">
+												<h6></h6>
+												<p></p>
+											   </div>
+										</div>
+									</div>
+									
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#" class="btn-st"></a>
+									</div>
+
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+										<div class="">
+											 <i class=""></i>
+											 <div class="">
+												<h6></h6>
+												<p></p>
+											  </div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-sm-12 pt-50">
+										<a href="#contact5" class="btn-st">Agregar Color</a>
+									</div>
+
+									<!-- Icon Info -->
+									<!--<div class="col-lg-3 col-sm-4">
+										<div class="info-icon">
+											 <i class="fas fa-user-astronaut"></i>
+											 <div class="desc-icon">
+												<h6>Freelance</h6>
+												   <p>Available</p>
+											</div>
+										</div>
+									</div>-->
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+          	</div> 
+
+			<!-- Formulario Cliente -->
+			<div class="page pt-contact4" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact4-form ">
+                        		<form action="/addUsers/{{listaUsuario.id}}" method="POST" class="box contact4-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombres</label>
+											<input type="text" name="nombres" id="nombres" class="form-control" placeholder="Nombres *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Apellidos</label>
+											<input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Identificacion</label>
+											<input type="number" name="identificacion" id="identificacion" class="form-control" placeholder="Identificacion *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Usuario</label>
+											<input type="text" name="usuario" id="usuario" class="form-control" placeholder="Usuario *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Contaseña</label>
+											<i class="fas fa-lock"></i>
+											<input type="password" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Telefono</label>
+											<input type="number" name="telefono" id="telefono" class="form-control" placeholder="Telefono *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Correo Electronico</label>
+											<i class="fas fa-envelope"></i>
+											<input type="email" name="correo" id="correo" class="form-control" placeholder="Correo *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Direccion</label>
+											<input type="text" name="direccion" id="direccion" class="form-control" placeholder="Direccion *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Cliente</button>
+                                			<div id="loader4">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success4">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error4">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Empleado -->
+			<div class="page pt-contact8" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact8-form ">
+                        		<form action="/addEmpleados/{{listaUsuario.id}}" method="POST" class="box contact8-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombres</label>
+											<input type="text" name="nombres" id="nombres" class="form-control" placeholder="Nombres *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Apellidos</label>
+											<input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Identificacion</label>
+											<input type="number" name="identificacion" id="identificacion" class="form-control" placeholder="Identificacion *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Usuario</label>
+											<input type="text" name="usuario" id="usuario" class="form-control" placeholder="Usuario *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Contaseña</label>
+											<i class="fas fa-lock"></i>
+											<input type="password" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Telefono</label>
+											<input type="number" name="telefono" id="telefono" class="form-control" placeholder="Telefono *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Correo Electronico</label>
+											<i class="fas fa-envelope"></i>
+											<input type="email" name="correo" id="correo" class="form-control" placeholder="Correo *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Direccion</label>
+											<input type="text" name="direccion" id="direccion" class="form-control" placeholder="Direccion *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Empleado</button>
+                                			<div id="loader8">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success8">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error8">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Servicio -->
+			<div class="page pt-contact7" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar Servicios</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact7-form ">
+                        		<form action="/addService/{{listaUsuario.id}}" method="POST" class="box contact7-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombre</label>
+											<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>valor</label>
+											<input type="number" name="valor" id="valor" class="form-control" placeholder="Valor *">
+                            			</div>
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Descripcion</label>
+											<input type="text" name="descripcion" id="descripcion" class="form-control" placeholder="Descripcion *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Servicio</button>
+                                			<div id="loader7">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success7">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error7">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Especie -->
+			<div class="page pt-contact2" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar Especie</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact2-form ">
+                        		<form action="/addEspecie/{{listaUsuario.id}}" method="POST" class="box contact2-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombre</label>
+											<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Especie</button>
+                                			<div id="loader2">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success2">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error2">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Raza -->
+			<div class="page pt-contact3" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar Raza</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact3-form ">
+                        		<form action="/addRaza/{{listaUsuario.id}}" method="POST" class="box contact3-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombre</label>
+											<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Raza</button>
+                                			<div id="loader3">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success3">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error3">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Color -->
+			<div class="page pt-contact5" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar Color</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact5-form ">
+                        		<form action="/addColor/{{listaUsuario.id}}" method="POST" class="box contact5-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombre</label>
+											<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Color</button>
+                                			<div id="loader5">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success5">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error5">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+
+			<!-- Formulario Formas de Pago -->
+			<div class="page pt-contact6" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2> Registrar Forma de pago</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact6-form ">
+                        		<form action="/addFormaPago/{{listaUsuario.id}}" method="POST" class="box contact6-valid" >
+									
+									<div class="row">
+
+										<div class="col-lg-6 col-sm-12">
+											
+											<label>Nombre del tipo de pago</label>
+											<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre *">
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12 text-center" id="divboton">
+                                			<button class="btn-st">Agregar Forma de Pago</button>
+                                			<div id="loader6">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success6">
+													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
+												</div>
+                                				<div id="error6">
+													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+            	</section>
+          	</div>
+			
+      	</div>
+    	</div>
+  		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+  		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<!-- All Script -->
+		<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/simplebar.js')}}"></script>
+		<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/jquery.animatedheadline.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/jquery.easypiechart.js')}}"></script>
+		<script src="{{url_for('static', filename='js/jquery.validation.js')}}"></script>
+		<script src="{{url_for('static', filename='js/tilt.js')}}"></script>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+		<script src="{{url_for('static', filename='js/main-demo.js')}}"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+		<script>
+			function myFunction() {
+			  // Declare variables
+			  var input, filter, table, tr, td, i, txtValue;
+			  input = document.getElementById("myInput");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("myTable");
+			  tr = table.getElementsByTagName("tr");
+			
+			  // Loop through all table rows, and hide those who don't match the search query
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  txtValue = td.textContent || td.innerText;
+				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				}
+			  }
+			}
+		</script>
+		
+    </body>
+
+</html>

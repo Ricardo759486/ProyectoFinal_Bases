@@ -5,6 +5,15 @@ a:focus,
 #resume:target .icon-r,
 #portfolio:target .icon-p,
 #blog:target .icon-b,
+#contact2:target .icon-c,
+#contact3:target .icon-c,
+#contact4:target .icon-c,
+#contact5:target .icon-c,
+#contact6:target .icon-c,
+#contact7:target .icon-c,
+#contact8:target .icon-c,
+#contact9:target .icon-c,
+#contact10:target .icon-c,
 #contact:target .icon-c,
 .pt-home .social ul li i:hover,
 .pt-about .info .loc,
@@ -14,6 +23,15 @@ a:focus,
 .pt-about .testimonial-item .rating li,
 .pt-resume .experience .main p,
 .pt-resume .work-process .wp-step,
+.contact2-valid #loader i,
+.contact3-valid #loader i,
+.contact4-valid #loader i,
+.contact5-valid #loader i,
+.contact6-valid #loader i,
+.contact7-valid #loader i,
+.contact8-valid #loader i,
+.contact9-valid #loader i,
+.contact10-valid #loader i,
 .contact-valid #loader i,
 .blog-page .blog-nav a:hover,
 .blog-page .blog-nav a:focus,
@@ -74,6 +92,24 @@ a:focus,
 	border-color: transparent transparent transparent #0dcdbd !important;
 }
 
+.contact2-form input:focus,
+.contact2-form textarea:focus
+.contact3-form input:focus,
+.contact3-form textarea:focus
+.contact4-form input:focus,
+.contact4-form textarea:focus
+.contact5-form input:focus,
+.contact5-form textarea:focus
+.contact6-form input:focus,
+.contact6-form textarea:focus
+.contact7-form input:focus,
+.contact7-form textarea:focus
+.contact8-form input:focus,
+.contact8-form textarea:focus
+.contact9-form input:focus,
+.contact9-form textarea:focus
+.contact10-form input:focus,
+.contact10-form textarea:focus
 .contact-form input:focus,
 .contact-form textarea:focus {
 	border-bottom: 1px solid #0dcdbd !important;

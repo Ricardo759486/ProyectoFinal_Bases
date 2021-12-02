@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-5">
+    {% include 'partials/_message.html' %}
+</div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <form action="/updateColor/{{idUsuario}}/{{color.id}}" method="POST" class="card bg-dark text-white">
+
+            <div class="cardy-body p-4">
+        
+                <div class="mb-3">
+                    <label for="Nombre">Nombre Color</label>
+                    <input type="text" name="nombre" placeholder="Nombre" class="form-control rounded-0 bg-dark border-0 text-white" value="{{color.nombre}}">
+                </div>
+                
+                <button class="btn btn-secondary">Editar</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
+
+{% endblock %}
