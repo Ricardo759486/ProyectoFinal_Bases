@@ -1,4 +1,4 @@
-#myInput, #myInput2 {
+#myInput, #myInput2, #myInput3, #myInput4, #myInput5, #myInput6, #myInput7, #myInput8, #myInput9 {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
     background-position: 10px 12px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -9,38 +9,45 @@
     margin-bottom: 12px; /* Add some space below the input */
   }
   
-  #myTable, #myTable8  {
+  #myTable, #myTable8, #myTable11, #myTable12, #myTable13, #myTable14, #myTable15, #myTable16 {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 15px; /* Increase font-size */
   }
 
-  #myTable2 {
+  #myTable2, #myTable9 {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 10px; /* Increase font-size */
   }
 
-  #myTable3 {
+  #myTable3{
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 9px; /* Increase font-size */
   }
+
+  #myTable10{
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 8px; /* Increase font-size */
+  }
   
-  #myTable th, #myTable td, #myTable8 th, #myTable8 td, #myTable3 th, #myTable3 td, #myTable2 th, #myTable2 td {
+  #myTable th, #myTable td, #myTable11 th, #myTable11 td, #myTable12 th, #myTable12 td, #myTable13 th, #myTable13 td, #myTable14 th, #myTable14 td, #myTable15 th, #myTable15 td, #myTable16 th, #myTable16 td, #myTable10 th, #myTable10 td, #myTable9 th, #myTable9 td, #myTable8 th, #myTable8 td, #myTable3 th, #myTable3 td, #myTable2 th, #myTable2 td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
   }
   
-  #myTable tr,#myTable8 tr, #myTable3 tr, #myTable2 tr {
+  #myTable tr, #myTable11 tr, #myTable12 tr, #myTable13 tr, #myTable14 tr, #myTable15 tr, #myTable16 tr, #myTable10 tr, #myTable9 tr, #myTable8 tr, #myTable3 tr, #myTable2 tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd;
   }
   
-  #myTable tr.header, #myTable tr:hover,#myTable8 tr.header, #myTable8 tr:hover, #myTable3 tr.header, #myTable3 tr:hover, #myTable2 tr.header, #myTable2 tr:hover {
+  #myTable tr.header, #myTable tr:hover, #myTable11 tr.header, #myTable11 tr:hover, #myTable12 tr.header, #myTable12 tr:hover, #myTable13 tr.header, #myTable13 tr:hover, #myTable14 tr.header, #myTable14 tr:hover, #myTable15 tr.header, #myTable15 tr:hover, #myTable16 tr.header, #myTable16 tr:hover, #myTable10 tr.header, #myTable10 tr:hover, #myTable9 tr.header, #myTable9 tr:hover, #myTable8 tr.header, #myTable8 tr:hover, #myTable3 tr.header, #myTable3 tr:hover, #myTable2 tr.header, #myTable2 tr:hover {
     /* Add a grey background color to the table header and on hover */
     background-color: #181717;
   }

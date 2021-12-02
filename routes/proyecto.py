@@ -62,7 +62,7 @@ def ir(id):
     cursor=db.cursor()
     cursor.execute('select j.id, j.nombre , r.nombre, c.nombre, p.nombre, j.anio_nacimiento, j.peso from mascota j, especie r, raza c , color p where j.id_usuario = '+ str(id) +' and j.id_especie = r.id and j.id_raza = c.id and j.id_color = p.id and j.estado = "A";')
     registro = cursor.fetchall()
-    cursor.execute('select j.id_factura, sum(j.cantidad), sum(j.subtotal), sum(j.iva), sum(j.total), u.nombres, r.fecha_atencion from usuario u, facturadetalle j, factura r where j.id_factura = r.id and r.id_usuario = 1 and j.estado = "A" group by j.id_factura; ')
+    cursor.execute('select j.id_factura, sum(j.cantidad), sum(j.subtotal), sum(j.iva), sum(j.total), u.nombres, r.fecha_atencion from usuario u, facturadetalle j, factura r where j.id_factura = r.id and r.id = j.id_factura and r.id_usuario = u.id and u.id = ' + str(id) + ' and j.estado = "A" group by j.id_factura;')
     listafacturas = cursor.fetchall()
     listaEspecie = Especie.query.all()
     listaRaza = Raza.query.all()
@@ -131,7 +131,7 @@ def add_pet(id):
         flash("No se ha podido agregar la mascota, por favor verifica la información ingresada.")
         return redirect(url_for('proy.ir', id =id))
     
-        
+
 
 @proy.route('/updatepet/<id>/<con>/<idActual>', methods=['POST','GET'])
 def update_pet(id, con, idActual):
@@ -231,11 +231,14 @@ def update_user(id, con, idActual):
 
             else:
 
-                usuario.usuario = request.form['usuario']
-                contra = request.form['contraseña']
-                clave = contra.encode('utf-8')
-                cifrado = hashlib.sha1(clave).hexdigest()
-                usuario.contrasenia = cifrado
+                if usuario.contrasenia != contrasenia:
+                    contra = request.form['contraseña']
+                    clave = contra.encode('utf-8')
+                    cifrado = hashlib.sha1(clave).hexdigest()
+                    usuario.contrasenia = cifrado
+                else:
+                    usuario.contrasenia = usuario.contrasenia
+
                 usuario.identificacion = request.form['identificacion']
                 usuario.nombres = request.form['nombres']
                 usuario.apellidos = request.form['apellidos']
@@ -275,14 +278,14 @@ def irVeterinario(id):
     db.close()
     return render_template('veterinario.html', listaUsuario = usuario, listaMascotas = registro, listaServicios = listaServicios, usuarios = usuarios, listaFactura = listaFactura)
 
-@proy.route("/addPago/<id>")
-def addpago(id):
+@proy.route("/addPago/<id>/<idActual>")
+def addpago(id, idActual):
     listaPagos = forma_pago.query.all()
-    return render_template('formapago.html', id = id, listaPagos = listaPagos)
+    return render_template('formapago.html', id = id, listaPagos = listaPagos, idActual = idActual)
 
 
-@proy.route('/addfactura/<id>', methods=['POST','GET'])
-def add_factura(id):
+@proy.route('/addfactura/<id>/<idActual>', methods=['POST','GET'])
+def add_factura(id, idActual):
 
     try:
 
@@ -297,22 +300,22 @@ def add_factura(id):
             db.session.add(new_factura)
             db.session.commit()
 
-            return render_template('servicio.html', id = id, listaServicios = listaServicios)
+            return render_template('servicio.html', id = id, listaServicios = listaServicios, idActual = idActual)
         
         else:
             flash("Datos no permitidos, por favor revise la información nuevamente.")
             listaPagos = forma_pago.query.all()
-            return render_template('formapago.html', id = id, listaPagos = listaPagos)
+            return render_template('formapago.html', id = id, listaPagos = listaPagos, idActual = idActual)
 
 
     except:
         flash("Datos no permitidos, por favor revise la información nuevamente.")
         listaPagos = forma_pago.query.all()
-        return render_template('formapago.html', id = id, listaPagos = listaPagos)
+        return render_template('formapago.html', id = id, listaPagos = listaPagos, idActual = idActual)
     
 
-@proy.route('/addDetalle/<id>', methods=['POST','GET'])
-def add_detalle(id):
+@proy.route('/addDetalle/<id>/<idActual>', methods=['POST','GET'])
+def add_detalle(id, idActual):
 
     try:
         servicio = request.form['servicio']
@@ -333,18 +336,18 @@ def add_detalle(id):
             db.session.add(new_facturaDetalle)
             db.session.commit()
 
-            return render_template('servicio.html', id = id, listaServicios = listaServicios)
+            return render_template('servicio.html', id = id, listaServicios = listaServicios, idActual = idActual)
 
         else:
             flash("Datos no permitidos, por favor revise la información nuevamente.")
             listaServicios = Servicio.query.all()
-            return render_template('servicio.html', id = id, listaServicios = listaServicios)
+            return render_template('servicio.html', id = id, listaServicios = listaServicios, idActual = idActual)
         
 
     except:
         flash("Datos no permitidos, por favor revise la información nuevamente.")
         listaServicios = Servicio.query.all()
-        return render_template('servicio.html', id = id, listaServicios = listaServicios)
+        return render_template('servicio.html', id = id, listaServicios = listaServicios, idActual = idActual)
     
 
 @proy.route('/administrador/<id>', methods=['POST','GET'])
@@ -354,7 +357,7 @@ def irAdministrador(id):
     cursor=db.cursor()
     cursor.execute('select j.id, j.nombre , r.nombre, c.nombre, p.nombre, j.anio_nacimiento, j.peso, u.id, u.nombres from usuario u, mascota j, especie r, raza c , color p where j.id_especie = r.id and j.id_raza = c.id and j.id_color = p.id and j.estado = "A" and j.id_usuario = u.id;')
     mascotas = cursor.fetchall()
-    cursor.execute('select j.id_factura, count(j.id_servicio), sum(j.subtotal), sum(j.iva), sum(j.total), u.nombres, r.fecha_atencion from usuario u, facturadetalle j, factura r where j.id_factura = r.id and r.id_usuario = u.id and j.estado = "A" group by j.id_factura;')
+    cursor.execute('select j.id_factura, sum(j.cantidad), sum(j.subtotal), sum(j.iva), sum(j.total), u.nombres, r.fecha_atencion from usuario u, facturadetalle j, factura r where j.id_factura = r.id and r.id_usuario = u.id and j.estado = "A" group by j.id_factura;')
     listaFactura = cursor.fetchall()
     cursor.execute('select * from servicio where estado = "A";')
     listaServicios = cursor.fetchall()

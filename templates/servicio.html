@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-md-4 offset-md-4">
-        <form action="/addDetalle/{{id}}" method="POST" class="card bg-dark text-white">
+        <form action="/addDetalle/{{id}}/{{idActual}}" method="POST" class="card bg-dark text-white">
 
             <div class="cardy-body p-4">
         
@@ -31,11 +31,11 @@
                     #boton2{font-size: 20px; border-radius: 300px; background-color: rgb(92, 83, 83);}
                 </style>
                 
-                <button class="btn btn-primary">Agregar otro servicio</button>    
+                <button class="btn btn-primary">Agregar Servicio</button>    
             </div>
         </form>
         <div id="divbotonServicio">
-            <a id="boton2" href="{{ url_for('proy.irVeterinario', id = id) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0"> Crear Factura </a>
+            <a id="boton2" href="{{ url_for('proy.irVeterinario', id = idActual) }}" class="btn bg-black text-white btn-dark btn-sm rounded 0"> Crear Factura </a>
         </div>
     </div>
 </div>
